@@ -3,6 +3,20 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import * as Sentry from '@sentry/react';
+
+const YOUR_DSN = ""
+
+Sentry.init({
+  dsn: YOUR_DSN,
+  integrations: [Sentry.browserTracingIntegration({
+    // idleTimeout: 60_000,
+    // finalTimeout: 60_000,
+    // childSpanTimeout: 60_000,
+  })],
+  tracesSampleRate: 1.0,
+  debug: true,
+});
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
