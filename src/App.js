@@ -6,7 +6,7 @@ function App() {
   useEffect(() => {
     const timers = [];
 
-    // Test 1: Wait 100ms, then mark start, wait 50ms, mark end, measure ~50ms duration.
+    // Test 1: Wait  0ms, then mark start, wait 750ms, mark end, measure ~750ms duration.
     timers.push(setTimeout(() => {
       performance.mark('test1_start');
       timers.push(setTimeout(() => {
@@ -17,7 +17,7 @@ function App() {
       }, 750));
     }, 0));
 
-    // Test 2: Wait 250ms, then mark start, wait 50ms, mark end, measure ~50ms duration.
+    // Test 2: Wait 100ms, then mark start, wait 1000ms, mark end, measure ~1100ms duration.
     timers.push(setTimeout(() => {
       performance.mark('test2_start');
       timers.push(setTimeout(() => {
@@ -28,7 +28,7 @@ function App() {
       }, 1000));
     }, 100));
 
-    // Test 3: Wait 500ms, then mark start, wait 50ms, mark end, measure ~50ms duration.
+    // Test 3: Wait 750ms, then mark start, wait 500ms, mark end, measure ~1250ms duration.
     timers.push(setTimeout(() => {
       performance.mark('test3_start');
       timers.push(setTimeout(() => {
