@@ -24,7 +24,7 @@ function App() {
         performance.mark('test2_end');
         performance.measure('test2_measure', 'test2_start', 'test2_end');
         const [measure] = performance.getEntriesByName('test2_measure');
-        console.log('[Test 2] duration (should be ~1250ms):', measure.duration.toFixed(2), 'ms');
+        console.log('[Test 2] duration (should be ~1100ms):', measure.duration.toFixed(2), 'ms');
       }, 1000));
     }, 100));
 
@@ -35,7 +35,7 @@ function App() {
         performance.mark('test3_end');
         performance.measure('test3_measure', 'test3_start', 'test3_end');
         const [measure] = performance.getEntriesByName('test3_measure');
-        console.log('[Test 3] duration (should be ~250ms):', measure.duration.toFixed(2), 'ms');
+        console.log('[Test 3] duration (should be ~1250ms):', measure.duration.toFixed(2), 'ms');
       }, 500));
     }, 750));
 
