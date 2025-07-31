@@ -5,10 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import * as Sentry from '@sentry/react';
 
-const YOUR_DSN = ""
-
 Sentry.init({
-  dsn: YOUR_DSN,
+  dsn: "https://65767c9525699c15f9009e5980e6815e@o4508337845829632.ingest.us.sentry.io/4508405316714496",
   integrations: [Sentry.browserTracingIntegration({
     // idleTimeout: 60_000,
     // finalTimeout: 60_000,
