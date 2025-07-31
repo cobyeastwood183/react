@@ -2,9 +2,11 @@ import React, { useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+const obj = {}
+
 function App() {
   useEffect(() => {
-    throw new Error('test');
+    obj.testFunction();
   }, []);
 
   return (
