@@ -1,14 +1,10 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 const obj = {}
 
 function App() {
-  useEffect(() => {
-    obj.testFunction();
-  }, []);
-
   return (
     <div className="App">
       <header className="App-header">
