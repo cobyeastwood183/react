@@ -2,11 +2,11 @@ import React, { useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-const obj = {}
-
 function App() {
   useEffect(() => {
-    obj.testFunction()
+    setTimeout(() => {
+      throw new Error('testsingg')
+    }, 1000)
   }, []);
 
   return (
