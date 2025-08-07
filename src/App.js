@@ -6,7 +6,7 @@ const obj = {}
 
 function App() {
   useEffect(() => {
-    obj.testFunction();
+    obj.testFunction()
   }, []);
 
   return (
